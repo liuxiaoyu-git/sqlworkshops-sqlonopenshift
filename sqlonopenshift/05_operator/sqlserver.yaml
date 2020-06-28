@@ -16,7 +16,7 @@ spec:
     storageClass: default
   saPassword:
     secretKeyRef: {key: sapassword, name: sql-secrets}
-  sqlServerContainer: {image: 'mcr.microsoft.com/mssql/rhel/server:2019-CTP2.4'}
+  sqlServerContainer: {image: 'mcr.microsoft.com/mssql/rhel/server:2019-latest'}
 ---
 apiVersion: v1
 kind: Service
@@ -45,7 +45,7 @@ spec:
     storageClass: default
   saPassword:
     secretKeyRef: {key: sapassword, name: sql-secrets}
-  sqlServerContainer: {image: 'mcr.microsoft.com/mssql/rhel/server:2019-CTP2.4'}
+  sqlServerContainer: {image: 'mcr.microsoft.com/mssql/rhel/server:2019-latest'}
 ---
 apiVersion: v1
 kind: Service
@@ -74,7 +74,7 @@ spec:
     storageClass: default
   saPassword:
     secretKeyRef: {key: sapassword, name: sql-secrets}
-  sqlServerContainer: {image: 'mcr.microsoft.com/mssql/rhel/server:2019-CTP2.4'}
+  sqlServerContainer: {image: 'mcr.microsoft.com/mssql/rhel/server:2019-latest'}
 ---
 apiVersion: v1
 kind: Service
